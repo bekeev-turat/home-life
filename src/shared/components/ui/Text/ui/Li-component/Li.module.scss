@@ -1,0 +1,45 @@
+.img {
+  width: 15px;
+}
+
+.li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  color: rgb(29, 29, 26);
+  font-size: 14px;
+  font-weight: 400;
+  list-style: none;
+  cursor: default;
+
+  &:hover {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+  }
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.md-16 {
+  font-size: 16px;
+}
+
+.blue {
+  color: rgb(79, 104, 255);
+
+  &:hover {
+    color: rgb(33, 64, 252);
+    font-weight: 600;
+  }
+}
