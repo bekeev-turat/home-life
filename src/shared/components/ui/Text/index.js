@@ -1,2 +1,2 @@
-export { Title } from "./ui/Title/Title";
-export { AppLink } from "./ui/AppLink/AppLink";
+export { Title } from './ui/Title/Title'
+export { AppLink } from './ui/AppLink/AppLink'
