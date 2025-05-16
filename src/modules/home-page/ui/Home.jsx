@@ -1,3 +1,9 @@
+import ProductOfTheDay from '../../product-of-the-day'
+
 export function Home() {
-  return <div>home</div>;
+	return (
+		<>
+			<ProductOfTheDay />
+		</>
+	)
 }
