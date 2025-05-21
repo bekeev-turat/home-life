@@ -4,6 +4,7 @@ import { $api } from '../../services/api'
 
 export const store = configureStore({
 	reducer: {
+		[$api.reducerPath]: $api.reducer,
 		[screenSlice.name]: screenSlice.reducer,
 	},
 	middleware: (getDefaultMiddleware) =>
