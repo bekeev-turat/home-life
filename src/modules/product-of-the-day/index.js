@@ -1,3 +1,1 @@
-import { ProductOfTheDay } from './ui/ProductOfTheDay'
-
-export default ProductOfTheDay
+export { ProductOfTheDay } from "./ui/ProductOfTheDay";
