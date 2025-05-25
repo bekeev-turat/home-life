@@ -1,0 +1,68 @@
+.container {
+  max-width: 280px;
+  width: 100%;
+  padding: 20px;
+  border: 0.5px solid rgb(210, 210, 209);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .title {
+    height: 40px;
+    margin-top: 10px;
+  }
+  .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding-bottom: 10px;
+    .oldPrice {
+      color: #aaa;
+      text-decoration: line-through;
+      font-size: 14px;
+    }
+  }
+  .promotion {
+    background-color: red;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+  }
+
+  .btn {
+    padding: 12px 90px 12px 90px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 160px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+
+    .title {
+      height: 60px;
+    }
+    .price {
+      p {
+        font-size: 16px;
+      }
+    }
+    .promotion {
+      padding: 3px 5px;
+      font-size: 12px;
+    }
+
+    .btn {
+      padding: 12px 48px;
+    }
+  }
+}
