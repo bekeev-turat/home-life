@@ -3,6 +3,7 @@ import { clsx } from 'clsx'
 import s from './Input.module.scss'
 
 export const Input = ({
+	type = 'text',
 	isError,
 	className,
 	rightIcon,
@@ -11,6 +12,7 @@ export const Input = ({
 }) => (
 	<div className={clsx(s.wrapper)}>
 		<input
+			type={type}
 			className={clsx(
 				s.input,
 				rightIcon && s.hasRightIcon,

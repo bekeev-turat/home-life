@@ -1,30 +1,30 @@
-import { useGetHomeProductQuery, PromotionData, ProductData } from "../api";
-import { Space } from "../../../shared/components/ui/Space/Space";
-import { ProductList } from "../../Product-components/ProductList/ui/ProductList";
-import { ProductOfTheDay } from "../../product-of-the-day";
+import { useGetHomeProductQuery, PromotionData, ProductData } from '../api'
+import { Space } from '../../../shared/components/ui/Space'
+import { ProductList } from '../../../shared/components/ui/product-components'
+import { ProductOfTheDay } from '../../product-of-the-day'
 
 export function Home() {
-  const { data, isLoading, error } = useGetHomeProductQuery();
+	const { data, isLoading, error } = useGetHomeProductQuery()
 
-  console.log(data, isLoading, error);
+	console.log(data, isLoading, error)
 
-  return (
-    <>
-      <ProductOfTheDay />
+	return (
+		<>
+			<ProductOfTheDay />
 
-      <Space h={80} />
+			<Space h={80} />
 
-      <ProductList data={ProductData} title={"Новинки"} />
+			<ProductList data={ProductData} title={'Новинки'} />
 
-      <Space h={60} />
+			<Space h={60} />
 
-      <ProductList data={ProductData} title={"Популярные"} />
+			<ProductList data={ProductData} title={'Популярные'} />
 
-      <Space h={60} />
+			<Space h={60} />
 
-      <ProductList data={PromotionData} title={"Акции"} />
+			<ProductList data={PromotionData} title={'Акции'} />
 
-      <Space h={70} />
-    </>
-  );
+			<Space h={70} />
+		</>
+	)
 }

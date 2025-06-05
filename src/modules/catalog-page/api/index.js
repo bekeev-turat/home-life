@@ -1,0 +1,83 @@
+export const catalogData = {
+	filters: {
+		brand: ['Samsung', 'LG', 'Tefal', 'Philips', 'Bosch'],
+		price: {
+			min: 100,
+			max: 10000,
+		},
+		type: ['Стандартный', 'Мощный', 'Хозяйственный'],
+		power: ['до 500', 'от 500 до 1000', 'от 1000 до 2000', 'от 2000 и более'],
+	},
+	product: [
+		{
+			title: 'Пылеcос Tefal Bagless ',
+			img: ['Фото товара.png'],
+			rating: 4,
+			price: 5000,
+			id: 0,
+		},
+		{
+			title: 'Пылеcос Tefal Bagless ',
+			img: ['Фото товара.png'],
+			rating: 4,
+			price: 5000,
+			id: 1,
+		},
+		{
+			title: 'Пылеcос Tefal Bagless ',
+			img: ['Фото товара.png'],
+			rating: 4,
+			price: 5000,
+			id: 2,
+		},
+		{
+			title: 'Пылеcос Tefal Bagless ',
+			img: ['Фото товара.png'],
+			rating: 4,
+			price: 5000,
+			id: 3,
+		},
+		{
+			title: 'Пылеcос Tefal Bagless ',
+			img: ['Фото товара.png'],
+			rating: 4,
+			price: 5000,
+			id: 4,
+		},
+		{
+			title: 'Пылеcос Tefal Bagless ',
+			img: ['Фото товара.png'],
+			rating: 4,
+			price: 5000,
+			id: 5,
+		},
+		{
+			title: 'Пылеcос Tefal Bagless ',
+			img: ['Фото товара.png'],
+			rating: 4,
+			price: 5000,
+			id: 6,
+		},
+		{
+			title: 'Пылеcос Tefal Bagless ',
+			img: ['Фото товара.png'],
+			rating: 4,
+			price: 5000,
+			id: 7,
+		},
+		{
+			title: 'Пылеcос Tefal Bagless ',
+			img: ['Фото товара.png'],
+			rating: 4,
+			price: 5000,
+			id: 8,
+		},
+		{
+			title: 'Пылеcос Tefal Bagless ',
+			img: ['Фото товара.png'],
+			rating: 4,
+			price: 5000,
+			id: 9,
+		},
+	],
+}

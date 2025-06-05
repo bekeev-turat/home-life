@@ -1,0 +1,21 @@
+.container {
+	display: flex;
+	flex-direction: column;
+
+	.acc {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+	.inputWrapper {
+		display: flex;
+		gap: 10px;
+	}
+	hr {
+		margin: 20px 0;
+	}
+	max-width: 232px;
+	.submit {
+		margin-bottom: 20px;
+	}
+}
