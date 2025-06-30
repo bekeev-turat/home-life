@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import s from './Accordion.module.scss'
 import clsx from 'clsx'
-import ArrowDownIcon from '../../../../assets/imgs/ArrowDownIcon'
+import ArrowDownIcon from '../../../../assets/icons/ArrowDownIcon'
 import { Text } from '../../Text'
 
 export function Accordion({ title, children, isOpenAcc = false, className }) {

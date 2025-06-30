@@ -14,13 +14,10 @@ export function Catalog() {
 		<div className={s.wrapper}>
 			<Title>Пылесосы</Title>
 			<Space h={35} />
-			<ProductList data={catalogData.product}>
-				{!isMobile && (
-					<div className={s.filterWrapper}>
-						<CatalogFilter filters={catalogData.filters} />
-					</div>
-				)}
-			</ProductList>
+			<div className={s.container}>
+				{!isMobile && <CatalogFilter filters={catalogData.filters} />}
+				<ProductList data={catalogData.product} />
+			</div>
 		</div>
 	)
 }

@@ -1,0 +1,23 @@
+.wrapper {
+	margin: 0 auto;
+	padding: 5px 20px 30px;
+	max-width: 1261px;
+	display: flex;
+	gap: 20px;
+	justify-content: space-between;
+
+	.search {
+		min-width: 250px;
+	}
+	nav {
+		max-width: 504px;
+		width: 100%;
+		line-height: 70px;
+
+		ul {
+			display: flex;
+			justify-content: space-between;
+			list-style-type: none;
+		}
+	}
+}

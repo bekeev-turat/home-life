@@ -8,13 +8,17 @@ import { ProductOfTheDay } from '../product-of-the-day/ProductOfTheDay'
 import s from './Home.module.scss'
 import { Title, Text } from '@shared/components/ui/Text'
 import HomeList from '../home-list/HomeList'
+import { useScreenWidth } from '@shared/lub/useScreenWidth'
+
 export function Home() {
+	const { isMobile } = useScreenWidth()
+
 	const { data, isLoading, error } = useGetHomeProductQuery()
 
 	console.log(data, isLoading, error)
 
 	return (
-		<div className={s.wrapper}>
+		<div>
 			<ProductOfTheDay
 				dayProduct={{
 					id: '2',
@@ -31,9 +35,9 @@ export function Home() {
 			<HomeList product={ProductData} title='Популярные' />
 			<HomeList product={PromotionData} title='Акции' />
 
-			<div className={s.about}>
+			<section className={s.about} id='about'>
 				<Title>О нас:</Title>
-				<Space h={30} />
+				{!isMobile ? <Space h={30} /> : <Space h={20} />}
 				<Text className={'sm-14'}>
 					Интернет-магазин "MyShop.ru" – лучшие товары по низким ценам!
 					<br />
@@ -54,7 +58,7 @@ export function Home() {
 					<br /> Вы можете купить любые товары в вашем городе: технику,
 					электронику, одежду, обувь, игрушки, книги и многое другое.
 				</Text>
-			</div>
+			</section>
 			<Space h={70} />
 		</div>
 	)

@@ -1,0 +1,29 @@
+.wrapper {
+	padding: 5px 20px 30px;
+
+	.search {
+		width: 100%;
+		max-width: none;
+	}
+}
+
+.container {
+	display: flex;
+	gap: 20px;
+	justify-content: space-between;
+}
+.button {
+	width: 42px;
+	height: 46px;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	align-items: center;
+	justify-content: center;
+	span {
+		width: 18px;
+		height: 2px;
+		background: #4f68ff;
+		border-radius: 2px;
+	}
+}

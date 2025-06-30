@@ -1,8 +1,6 @@
 import React from 'react'
 
 export default function ArrowDownIcon({ className }) {
-	console.log(className)
-
 	return (
 		<svg
 			className={className}

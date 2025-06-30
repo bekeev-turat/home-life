@@ -10,8 +10,8 @@ export function CatalogFilter({ filters, className }) {
 	return (
 		<div className={clsx(s.container, className)}>
 			<Accordion className={s.acc} title={'Бренд'} isOpenAcc={true}>
-				{filters.brand.map((el) => (
-					<Checkbox>{el}</Checkbox>
+				{filters.brand.map((el, i) => (
+					<Checkbox key={i}>{el}</Checkbox>
 				))}
 			</Accordion>
 			<hr />
@@ -21,19 +21,20 @@ export function CatalogFilter({ filters, className }) {
 			</Accordion>
 			<hr />
 			<Accordion className={s.acc} title={'Тип пылесоса'}>
-				{filters.type.map((el) => (
-					<Checkbox>{el}</Checkbox>
+				{filters.type.map((el, i) => (
+					<Checkbox key={i}>{el}</Checkbox>
 				))}
 			</Accordion>
 			<hr />
 			<Accordion className={s.acc} title={'Потребляемая мощность'}>
-				{filters.power.map((el) => (
-					<Checkbox>{el}</Checkbox>
+				{filters.power.map((el, i) => (
+					<Checkbox key={i}>{el}</Checkbox>
 				))}
 			</Accordion>
 			<hr />
-			<AppButton variant='button'
-			 className={s.submit}>Отправить</AppButton>
+			<AppButton variant='button' className={s.submit}>
+				Отправить
+			</AppButton>
 			<AppButton variant='border'>Сбросить</AppButton>
 		</div>
 	)

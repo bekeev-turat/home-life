@@ -1,0 +1,61 @@
+.wrapper {
+	margin: 0 auto;
+	padding: 30px 20px 50px;
+	max-width: 1261px;
+	padding-bottom: 75px;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+
+		.numberBlock {
+			display: flex;
+			flex-direction: column;
+			gap: 20px 0;
+		}
+
+		.mobileNumberBlock {
+			display: flex;
+			flex-direction: row;
+			gap: 0 50px;
+		}
+
+		.box {
+			display: flex;
+			gap: 10px;
+		}
+
+		.number {
+			display: flex;
+			flex-direction: column;
+			gap: 10px 0;
+		}
+
+		// .number span,
+		// span {
+		// 	color: rgb(0, 0, 0);
+		// 	font-size: 14px;
+		// 	font-weight: 400;
+		// 	line-height: 17px;
+		// 	letter-spacing: 0%;
+		// 	text-align: left;
+		// }
+	}
+
+	.icon {
+		width: 14.24px;
+		height: 12.16px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.wrapper {
+		h3 {
+			font-size: 24px;
+		}
+
+		.adressContainer {
+			margin-top: 20px;
+		}
+	}
+}
