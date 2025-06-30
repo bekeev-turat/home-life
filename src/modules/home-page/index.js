@@ -1,3 +1,3 @@
-import { Home } from './ui/Home'
+import { Home } from './ui/home/Home'
 
 export default Home
