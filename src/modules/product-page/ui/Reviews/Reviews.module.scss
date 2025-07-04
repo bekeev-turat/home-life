@@ -1,0 +1,17 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	max-width: 806px;
+}
+
+.btn {
+	font-size: 16px;
+	font-weight: 500;
+	height: 24px;
+	color: #4f68ff;
+	border-bottom: #4f68ff 1px solid;
+	cursor: pointer;
+	@media (max-width: 768px) {
+		font-size: 12px;
+	}
+}

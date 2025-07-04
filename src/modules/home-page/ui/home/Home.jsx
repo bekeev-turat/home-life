@@ -9,9 +9,11 @@ import s from './Home.module.scss'
 import { Title, Text } from '@shared/components/ui/Text'
 import HomeList from '../home-list/HomeList'
 import { useScreenWidth } from '@shared/lub/useScreenWidth'
+import { useScrollToElementFromQuery } from '@shared/lub/useScrollToElementFromQuery'
 
 export function Home() {
 	const { isMobile } = useScreenWidth()
+	useScrollToElementFromQuery()
 
 	const { data, isLoading, error } = useGetHomeProductQuery()
 
@@ -24,9 +26,8 @@ export function Home() {
 					id: '2',
 					img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_FWF2judaujT30K9sMf-tZFhMWpgP6xCemw&s',
 					title: 'Пылесос Tefal Super',
-					price: '17990',
-					oldPrice: '19990',
-					promotion: '-10%',
+					price: 19990,
+					promotion: 17990,
 				}}
 			/>
 			<Space h={80} />
@@ -36,7 +37,7 @@ export function Home() {
 			<HomeList product={PromotionData} title='Акции' />
 
 			<section className={s.about} id='about'>
-				<Title>О нас:</Title>
+				<Title size={isMobile ? 'md-18' : 'xl-36'}>О нас:</Title>
 				{!isMobile ? <Space h={30} /> : <Space h={20} />}
 				<Text className={'sm-14'}>
 					Интернет-магазин "MyShop.ru" – лучшие товары по низким ценам!

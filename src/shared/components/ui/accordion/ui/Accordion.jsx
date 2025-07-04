@@ -4,7 +4,13 @@ import clsx from 'clsx'
 import ArrowDownIcon from '../../../../assets/icons/ArrowDownIcon'
 import { Text } from '../../Text'
 
-export function Accordion({ title, children, isOpenAcc = false, className }) {
+export function Accordion({
+	title,
+	children,
+	isOpenAcc = false,
+	className,
+	titleSize,
+}) {
 	const [isOpen, setIsOpen] = useState(isOpenAcc)
 
 	return (
@@ -13,7 +19,7 @@ export function Accordion({ title, children, isOpenAcc = false, className }) {
 				className={s.accordion}
 				onClick={() => setIsOpen((prev) => !prev)}
 			>
-				<Text>{title}</Text>
+				<Text size={titleSize}>{title}</Text>
 				<ArrowDownIcon className={clsx(s.icon, isOpen && s.activeIcon)} />
 			</button>
 			<div className={clsx(s.panel, isOpen && s.active, className)}>

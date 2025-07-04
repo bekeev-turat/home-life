@@ -1,0 +1,20 @@
+.container {
+	max-width: 364px;
+	width: 100%;
+
+	@media (max-width: 768px) {
+		max-width: 300px;
+	}
+}
+
+.list {
+	list-style-type: none;
+	p {
+		color: #4a4a48;
+	}
+}
+.item {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 14px;
+}

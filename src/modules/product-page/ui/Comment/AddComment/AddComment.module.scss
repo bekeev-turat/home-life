@@ -1,0 +1,36 @@
+.form {
+	margin-bottom: 20px;
+	transition: height 0.3s;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	max-width: 806px;
+
+	textarea {
+		resize: none;
+		height: 179px;
+		width: 100%;
+		padding: 15px;
+		border: #d2d2d1 solid 1px;
+		border-radius: 10px;
+		outline: none;
+	}
+
+	.btnWrapper {
+		display: flex;
+		justify-content: end;
+	}
+	button {
+		padding: 15px 30px;
+	}
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+align-items: center;
+	.close {
+		transform: rotate(45deg);
+		font-size: 36px;
+		cursor: pointer;
+	}
+}

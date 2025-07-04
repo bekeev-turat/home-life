@@ -9,7 +9,7 @@ export default function HomeList({ product, title }) {
 
 	return (
 		<>
-			<Title>{title}</Title>
+			<Title size={isMobile ? 'md-18' : 'xl-36'}>{title}</Title>
 			{!isMobile ? <Space h={30} /> : <Space h={20} />}
 
 			<ProductList data={product} />

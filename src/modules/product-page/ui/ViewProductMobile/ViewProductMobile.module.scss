@@ -1,0 +1,39 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.img {
+	width: 275px;
+	height: 394px;
+	background: #c4c4c4;
+}
+
+.price {
+	display: flex;
+	flex-direction: column;
+
+	.promotionWrapper {
+		display: flex;
+		gap: 15px;
+		align-items: center;
+
+		.promotion {
+			background-color: red;
+			color: white;
+			padding: 5px 8px;
+			border-radius: 5px;
+			display: block;
+		}
+	}
+	.oldPrice {
+		color: #aaa;
+		text-decoration: line-through;
+		font-size: 14px;
+	}
+}
+
+.btn {
+	padding: 12px 59px 12px 59px;
+}

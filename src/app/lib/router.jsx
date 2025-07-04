@@ -6,6 +6,7 @@ import { Layout } from '../layouts/Layout'
 // Ленивая загрузка страниц
 const HomePage = lazy(() => import('../../modules/home-page'))
 const CatalogPage = lazy(() => import('../../modules/catalog-page'))
+const ProductPage = lazy(() => import('../../modules/product-page'))
 
 export const router = createBrowserRouter([
 	{
@@ -14,6 +15,7 @@ export const router = createBrowserRouter([
 		children: [
 			{ path: ROUTES.Home, element: <HomePage /> },
 			{ path: ROUTES.Catalog, element: <CatalogPage /> },
+			{ path: ROUTES.CatalogItem, element: <ProductPage /> },
 		],
 	},
 ])

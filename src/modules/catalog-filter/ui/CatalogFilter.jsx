@@ -1,9 +1,9 @@
 import clsx from 'clsx'
-import { Accordion } from '../../../shared/components/ui/accordion'
+import { Accordion } from '@shared/components/ui/accordion'
 import s from './CatalogFilter.module.scss'
-import { Checkbox } from '../../../shared/components/ui/checkbox/ui/Checkbox'
-import { Input } from '../../../shared/components/ui/input/ui/Input'
-import { AppButton } from '../../../shared/components/ui/button/ui/AppButton'
+import { Checkbox } from '@shared/components/ui/checkbox/ui/Checkbox'
+import { Input } from '@shared/components/ui/input/ui/Input/Input'
+import { AppButton } from '@shared/components/ui/button/ui/AppButton'
 export function CatalogFilter({ filters, className }) {
 	console.log(filters)
 

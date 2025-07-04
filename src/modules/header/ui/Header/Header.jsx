@@ -28,7 +28,7 @@ export function Header() {
 						<AppLink link='/order'>Корзина</AppLink>
 					</li>
 					<li>
-						<AppLink link='#about'>О нас</AppLink>
+						<AppLink link='/?scrollTo=about'>О нас</AppLink>
 					</li>
 					<li>
 						<UserIcon />

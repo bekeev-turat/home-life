@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 70px;
+
+  .description {
+    max-width: 510px;
+    min-width: 280px;
+
+  }
+}
