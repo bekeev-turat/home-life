@@ -20,7 +20,7 @@ export function HeaderMobile() {
 					onClose={() => setIsOpen(false)}
 				></HeaderNavMobile>
 			)}
-			<div div className={s.head}>
+			<div className={s.head}>
 				<Link to='/'>
 					<Logo />
 				</Link>

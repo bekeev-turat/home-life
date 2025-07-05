@@ -1,0 +1,20 @@
+.form {
+	display: flex;
+	justify-content: space-between;
+	gap: 50px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 700px;
+}
+
+.card {
+	width: 100%;
+
+	max-width: 305px;
+}

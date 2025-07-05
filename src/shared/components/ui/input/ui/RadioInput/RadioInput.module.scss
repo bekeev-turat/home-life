@@ -1,0 +1,35 @@
+.radioLabel {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+}
+
+.radioInput {
+	display: none;
+}
+
+.radioCircle {
+	width: 16px;
+	height: 16px;
+	border-radius: 100%;
+	border: 1px solid #ccc;
+	position: relative;
+	transition: background-color 0.2s;
+	display: flex; // добавлено для центрирования ::before
+	align-items: center;
+	justify-content: center;
+}
+
+.checked {
+	background-color: #fff;
+	border-color: #1d1d1a;
+
+	&::before {
+		content: '';
+		width: 10px;
+		height: 10px;
+		background: #1d1d1a;
+		border-radius: 100%;
+	}
+}
