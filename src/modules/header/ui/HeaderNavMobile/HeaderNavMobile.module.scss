@@ -2,32 +2,57 @@
 	position: fixed;
 	inset: 0;
 	background-color: rgba(0, 0, 0, 0.5);
-	// display: flex;
-	// justify-content: center;
-	// align-items: center;
 	z-index: 1000;
+
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+
+	&.show {
+		opacity: 1;
+		pointer-events: auto;
+	}
 }
 .theme {
 	display: flex;
-gap: 8px;
+	gap: 8px;
 }
 .modal {
-	// position: fixed;
 	padding: 16px 10px;
 	width: 70%;
 	height: 100vh;
-	// z-index: 1000;
 	background: rgb(229, 229, 231);
+
+	transform: translateX(-100%);
+	opacity: 0;
+	transition:
+		transform 0.3s ease,
+		opacity 0.3s ease;
+
+	&.modalShow {
+		transform: translateX(0);
+		opacity: 1;
+	}
+
+	&.modalHide {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+
 	nav {
 		ul {
 			list-style-type: none;
 		}
 		a {
-			font-size: 16px;
-			font-weight: 400;
-			line-height: 15px;
-			padding: 16px 0;
-			border-bottom: 1px solid #d2d2d1;
+			span {
+				width: 100%;
+				height: 100%;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 15px;
+				padding: 16px 0;
+				border-bottom: 1px solid #d2d2d1;
+			}
 		}
 	}
 
@@ -40,63 +65,3 @@ gap: 8px;
 		width: 100%;
 	}
 }
-// // Анимации
-// @keyframes fadeIn {
-//   from { opacity: 0 }
-//   to   { opacity: 1 }
-// }
-
-// @keyframes fadeOut {
-//   from { opacity: 1 }
-//   to   { opacity: 0 }
-// }
-
-// @keyframes slideUp {
-//   from { transform: translateY(50px); opacity: 0 }
-//   to   { transform: translateY(0); opacity: 1 }
-// }
-
-// @keyframes slideDown {
-//   from { transform: translateY(0); opacity: 1 }
-//   to   { transform: translateY(50px); opacity: 0 }
-// }
-
-// // Стили
-// .backdrop {
-//   position: fixed;
-//   inset: 0;
-//   z-index: 1000;
-//   background-color: rgba(0, 0, 0, 0.4);
-//   animation: fadeOut 0.3s ease forwards;
-
-//   &.backdropVisible {
-//     animation: fadeIn 0.3s ease forwards;
-//   }
-// }
-
-// .modal {
-//   background-color: #fff;
-//   padding: 24px;
-//   height: 100%;
-//   width: 100%;
-//   position: relative;
-//   animation: slideDown 0.3s ease forwards;
-
-//   &.modalVisible {
-//     animation: slideUp 0.3s ease forwards;
-//   }
-// }
-
-// .closeBtn {
-//   position: absolute;
-//   top: 12px;
-//   right: 12px;
-//   background: transparent;
-//   border: none;
-//   font-size: 24px;
-//   cursor: pointer;
-// }
-
-// .content {
-//   margin-top: 16px;
-// }

@@ -9,6 +9,8 @@ const CatalogPage = lazy(() => import('../../modules/catalog-page'))
 const ProductPage = lazy(() => import('../../modules/product-page'))
 const BasketPage = lazy(() => import('../../modules/basket'))
 const OrderPage = lazy(() => import('../../modules/order'))
+const SignUp = lazy(() => import('../../modules/auth/sign-up'))
+const SignIn = lazy(() => import('../../modules/auth/sign-in'))
 
 export const router = createBrowserRouter([
 	{
@@ -20,6 +22,8 @@ export const router = createBrowserRouter([
 			{ path: ROUTES.CatalogItem, element: <ProductPage /> },
 			{ path: ROUTES.Basket, element: <BasketPage /> },
 			{ path: ROUTES.Order, element: <OrderPage /> },
+			{ path: ROUTES.SignUp, element: <SignUp /> },
+			{ path: ROUTES.SignIn, element: <SignIn /> },
 		],
 	},
 ])

@@ -3,11 +3,12 @@ import { Rating } from 'react-simple-star-rating'
 import { AppButton } from '../../button'
 import { Title, Text } from '../../Text'
 import s from './ProductCard.module.scss'
-import PriceBlock from '../../PriceBlock/PriceBlock'
 import { formatPrice } from '@shared/lub/formatPrice'
+import { useNavigate } from 'react-router-dom'
 
 export function ProductCard({ data }) {
-	const { img, title, price, promotion, rating } = data
+	const { img, title, price, promotion, rating, id } = data
+	const navigate = useNavigate()
 	return (
 		<div className={s.container}>
 			<img src={img} alt={title} />
@@ -35,7 +36,11 @@ export function ProductCard({ data }) {
 					)}
 				</div>
 
-				<AppButton variant='button' className={s.btn}>
+				<AppButton
+					onClick={() => navigate(`/product/${id}`)}
+					variant='button'
+					className={s.btn}
+				>
 					Купить
 				</AppButton>
 			</div>

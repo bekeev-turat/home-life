@@ -13,7 +13,7 @@ export function Order() {
 
 	return (
 		<div>
-			<Title size={isMobile ? 'md-18' : 'xl-36'}>Заполните форму</Title>
+			<Title size={isMobile ? 'sm-18' : 'xl-36'}>Заполните форму</Title>
 			<Space h={30} />
 			<form className={s.form}>
 				<div className={s.wrapper}>

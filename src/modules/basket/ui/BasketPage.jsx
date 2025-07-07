@@ -13,7 +13,7 @@ export function BasketPage() {
 	const { isMobile } = useScreenWidth()
 	return (
 		<div>
-			<Title size={isMobile ? 'md-18' : 'xl-36'}>Просмотр корзины</Title>
+			<Title size={isMobile ? 'sm-18' : 'xl-36'}>Просмотр корзины</Title>
 			<Space h={30} />
 			<div className={s.wrapper}>
 				<div className={s.productList}>

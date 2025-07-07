@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import { Accordion } from '@shared/components/ui/accordion'
 import s from './CatalogFilter.module.scss'
-import { Checkbox } from '@shared/components/ui/checkbox/ui/Checkbox'
+import { Checkbox } from '@shared/components/ui/input/ui/Checkbox/Checkbox'
 import { Input } from '@shared/components/ui/input/ui/Input/Input'
 import { AppButton } from '@shared/components/ui/button/ui/AppButton'
 export function CatalogFilter({ filters, className }) {
@@ -20,7 +20,7 @@ export function CatalogFilter({ filters, className }) {
 				<Input placeholder='До' type='number' />
 			</Accordion>
 			<hr />
-			<Accordion className={s.acc} title={'Тип пылесоса'}>
+			<Accordion className={s.acc} title={'Тип'}>
 				{filters.type.map((el, i) => (
 					<Checkbox key={i}>{el}</Checkbox>
 				))}

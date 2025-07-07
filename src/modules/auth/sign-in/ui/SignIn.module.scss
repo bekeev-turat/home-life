@@ -1,0 +1,50 @@
+.wrapper {
+	max-width: 616px;
+	width: 100%;
+	margin: 45px auto;
+	padding: 70px 90px;
+	border: 1px solid #000;
+	border-radius: 16px;
+
+	@media (max-width: 600px) {
+		padding: 50px 0;
+	border: none;
+
+	}
+}
+.subLink {
+	display: flex;
+	gap: 5px;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+.line {
+	display: flex;
+	align-items: center;
+	gap: 23px;
+	color: #777776;
+	font-size: 14px;
+	font-weight: 400;
+	hr {
+		flex: 1;
+		height: 1px;
+		background-color: #777776;
+		border: none;
+	}
+}
+.form {
+	.google {
+		display: flex;
+		gap: 10px;
+		justify-content: center;
+		align-items: center;
+		height: 45px;
+	}
+	button {
+		width: 100%;
+	}
+}

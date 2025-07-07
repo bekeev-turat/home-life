@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 
-import { Text } from './../../Text'
+import { Text } from '../../../Text'
 import s from './Checkbox.module.scss'
 
 export function Checkbox({ children, onChange, checked, className }) {

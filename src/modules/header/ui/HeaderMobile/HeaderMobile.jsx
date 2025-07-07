@@ -29,7 +29,6 @@ export function HeaderMobile() {
 						variant={'border'}
 						onClick={() => {
 							setIsOpen(true)
-							console.log(isOpen)
 						}}
 						className={s.button}
 					>

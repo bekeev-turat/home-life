@@ -11,7 +11,7 @@ export function Footer() {
 
 	return (
 		<footer className={s.wrapper}>
-			<Title size={isMobile ? 'md-18' : 'xl-36'}>Наши контакты:</Title>
+			<Title size={isMobile ? 'sm-18' : 'xl-36'}>Наши контакты:</Title>
 			{!isMobile ? <Space h={30} /> : <Space h={20} />}
 
 			<div className={s.container}>

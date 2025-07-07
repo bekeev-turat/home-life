@@ -37,7 +37,7 @@ export function Home() {
 			<HomeList product={PromotionData} title='Акции' />
 
 			<section className={s.about} id='about'>
-				<Title size={isMobile ? 'md-18' : 'xl-36'}>О нас:</Title>
+				<Title size={isMobile ? 'sm-18' : 'xl-36'}>О нас:</Title>
 				{!isMobile ? <Space h={30} /> : <Space h={20} />}
 				<Text className={'sm-14'}>
 					Интернет-магазин "MyShop.ru" – лучшие товары по низким ценам!

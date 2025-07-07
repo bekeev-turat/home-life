@@ -3,7 +3,14 @@ import { Link } from 'react-router-dom'
 
 import s from './AppLink.module.scss'
 
-export function AppLink({ className, children, size, type, color, link }) {
+export function AppLink({
+	className,
+	children,
+	size,
+	type,
+	color,
+	link,
+}) {
 	const isAnchorLink = typeof link === 'string' && link.startsWith('#')
 
 	if (isAnchorLink) {
